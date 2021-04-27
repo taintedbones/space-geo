@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
         maxWidth: "150px",
         height: "80px",
         variant: "outlined",
+        color: "white"
     },
     link: {
         textDecoration: "none",
@@ -24,36 +25,36 @@ function TopNav() {
     return (
         <div>
             <AppBar className={classes.appbar}>
-                <Button className={classes.button} variant="outlined">
-                    <Link className={classes.link} to='/space-geo'>
+                <Link className={classes.link} to='/space-geo'>
+                    <Button className={classes.button} variant="outlined">
                         Home
-                    </Link>
-                </Button>
-                <Button className={classes.button} variant="outlined">
-                    <Link className={classes.link} to='/space-geo/exp-tools'>
-                        Exploration Tools
-                    </Link>
-                </Button>
-                <Button className={classes.button} variant="outlined">
-                    <Link className={classes.link} to='/space-geo/features'>
-                        Geological Features
-                    </Link>
-                </Button>
-                <Button className={classes.button} variant="outlined">
-                    <Link className={classes.link} to='/space-geo/moon'>
-                        Geology of the Moon
-                    </Link>
-                </Button>
-                <Button className={classes.button} variant="outlined">
-                    <Link className={classes.link} to='/space-geo/planets'>
-                        Geology of the Planets
-                    </Link>
-                </Button>
-                <Button className={classes.button} variant="outlined">
-                    <Link className={classes.link} to='/space-geo/sources'>
-                        Sources
-                    </Link>
-                </Button>
+                    </Button>
+                </Link>
+                <Link className={classes.link} to='/space-geo/exp-tools'>
+                    <Button className={classes.button} variant="outlined">
+                        Exploration Tools                    
+                    </Button>
+                </Link>
+                <Link className={classes.link} to='/space-geo/features'>
+                    <Button className={classes.button} variant="outlined">                    
+                        Geological Features                    
+                    </Button>
+                </Link>
+                <Link className={classes.link} to='/space-geo/moon'>
+                    <Button className={classes.button} variant="outlined">                    
+                        Geology of the Moon                    
+                    </Button>
+                </Link>
+                <Link className={classes.link} to='/space-geo/planets'>
+                    <Button className={classes.button} variant="outlined">
+                        Geology of the Planets                    
+                    </Button>
+                </Link>
+                <Link className={classes.link} to='/space-geo/sources'>
+                    <Button className={classes.button} variant="outlined">                    
+                        Sources                    
+                    </Button>
+                </Link>
             </AppBar>
         </div>
     );
