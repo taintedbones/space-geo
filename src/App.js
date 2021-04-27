@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
   },
   body: {
-    marginTop: "300px",
+    marginTop: "200px",
   }
 }));
 
