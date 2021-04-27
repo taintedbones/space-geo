@@ -3,7 +3,10 @@ import { Typography } from '@material-ui/core';
 function HomePage() {
     return (
         <div>
-            <Typography>Home Page</Typography>
+            <Typography variant="h4">Home Page</Typography>
+            <Typography variant="body1">
+                Add text here.
+            </Typography>
         </div>
     );
 }
