@@ -11,7 +11,7 @@ import GeoMoonPage from "./pages/GeoMoonPage";
 import GeoPlanetsPage from "./pages/GeoPlanetsPage";
 import SourcesPage from "./pages/SourcesPage";
 import TopNav from './components/TopNav';
-import './App.css';
+// import './App.css';
 
 const useStyles = makeStyles((theme) => ({
   app: {
