@@ -10,47 +10,53 @@ import GeoMoonPage from "./pages/GeoMoonPage";
 import GeoPlanetsPage from "./pages/GeoPlanetsPage";
 import SourcesPage from "./pages/SourcesPage";
 import TopNav from './components/TopNav';
+import Background from './assets/Space-Background.jpg';
 
-const b_margins = "20px";
+const b_margins = "150px";
 
 const useStyles = makeStyles((theme) => ({
   app: {
-    background: "darkgray",
-    height: "100%",
+    backgroundImage: `url(${Background})`,
+    backgroundRepeat: 'repeat-y',
+    backgroundSize: '100%',
+    backgroundAttachment: 'fixed',
+    height: '100vv'
   },
   body: {
-    marginTop: "120px",
+    background: 'white',
+    backgroundAttachment: 'fixed',
     marginLeft: b_margins,
-    marginBottom: b_margins,
     marginRight: b_margins,
+    paddingTop: '100px',
+    height: '100vv'
   }
 }));
 
 function App() {
   const classes = useStyles();
   const format = {
-    title: "h3",
-    section: "h5",
-    sub_sec: "h6",
+    title: "h2",
+    section: "h4",
+    sub_sec: "h5",
     body: "body1",
   }
 
   return (
-    <div className="App">
+    <div className={classes.app}>
       <div className={classes.body}>
         <Router>
           <Route path="/" component={TopNav} />
           <Switch>
-            <Route path="/space-geo/exp-tools" component={ExpToolsPage} />
-            <Route path="/space-geo/features" component={GeoFeaturesPage} />
-            <Route path="/space-geo/moon">
-              <GeoMoonPage v={format} />
-            </Route>
-            <Route path="/space-geo/planets">
-              <GeoPlanetsPage v={format} />
-            </Route>
-            <Route path="/space-geo/sources" component={SourcesPage} />
-            <Route path="/space-geo" component={HomePage} />
+              <Route path="/space-geo/exp-tools" component={ExpToolsPage} />
+              <Route path="/space-geo/features" component={GeoFeaturesPage} />
+              <Route path="/space-geo/moon">
+                <GeoMoonPage v={format} />
+              </Route>
+              <Route path="/space-geo/planets">
+                <GeoPlanetsPage v={format} />
+              </Route>
+              <Route path="/space-geo/sources" component={SourcesPage} />
+              <Route path="/space-geo" component={HomePage} />
           </Switch>
         </Router>
       </div>
