@@ -12,7 +12,10 @@ import Neptune from '../components/Neptune.js';
 const useStyles = makeStyles((theme) => ({
     body: {
     justifyContent: "left"
-    } 
+    },
+    tabPanel: {
+      justifySelf: "center"
+    }
 }));
 
 function TabPanel(props) {
@@ -66,11 +69,11 @@ function GeoPlanetsPage(props) {
           <Tab label="Neptune" {...a11yProps(5)}/>
           <Tab label="Uranus" {...a11yProps(6)}/>
         </Tabs>
-        <Typography variant="h4">Geology of the Planets Page</Typography>
+        {/* <Typography variant="h4">Geology of the Planets Page</Typography> */}
         <TabPanel value={value} index={0}>
             <Mercury v={props.v} />
         </TabPanel>
-        <TabPanel value={value} index={1}>
+        <TabPanel value={value} index={1} className={classes.tabPanel}>
             <Venus v={props.v} />
         </TabPanel>
         <TabPanel value={value} index={2}>
