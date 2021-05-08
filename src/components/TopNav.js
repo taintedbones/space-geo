@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
     appbar: {
         position: "fixed",
-        display: "inline-block",
+        display: "block",
         background: "darkslateblue",
+        alignItems:'center',
+        justifyContent: 'center'
     },
     button: {
         maxWidth: "150px",
