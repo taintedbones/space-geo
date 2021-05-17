@@ -43,8 +43,7 @@ function Mars(props) {
             As is seen with the other terrestrial planets, the southern 
             highlands of Mars are presumably the planet’s original crust.
           </Typography>
-        </Grid>
-      
+        </Grid>      
         <Typography variant={props.v.section}>Major Geological Features</Typography>
         <Typography variant={props.v.sub_sec}>Tharsis Bulge</Typography>
         <Typography variant={props.v.body}>
