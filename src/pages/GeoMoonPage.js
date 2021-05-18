@@ -21,7 +21,7 @@ function GeoMoonPage(props) {
 
   return (
     <div className={classes.body}>
-      <Grid container spacing={3} justify="center" alignItems='center'>
+      <Grid container spacing={3} justify='space-evenly' alignItems='center'>
         <Grid item sm={12} md={4}>
           <img src={MoonImg} className={classes.moonImg} alt='The Moon' />
         </Grid>
