@@ -1,9 +1,9 @@
 import { Grid, makeStyles, Typography } from "@material-ui/core";
-import VenusImg from '../assets/Venus.png';
+import VenusImg from '../assets/Venus/Venus.png';
 
 const useStyles = makeStyles((theme) => ({
-  venusImg: {
-    maxWidth: "300px",
+  img: {
+    maxWidth: "100%",
     height: "auto",
     borderRadius: '5%'
   }
@@ -18,7 +18,7 @@ function Venus(props) {
         spacing={3}
         justify='center'>
           <Grid item sm={12} md={4}>
-            <img src={VenusImg} className={classes.venusImg} alt='Venus'/>
+            <img src={VenusImg} className={classes.img} alt='Venus'/>
           </Grid>
           <Grid item sm={12} md={7}>
             <Typography variant={props.v.title}>Venus</Typography>
