@@ -20,15 +20,20 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: 'repeat-y',
     backgroundSize: '100%',
     backgroundAttachment: 'fixed',
-    height: '100%'
+    height: '100%',
+    display: 'flex',
+    justifyContent: 'center',
   },
   body: {
     background: 'white',
+    position: 'relative',
     backgroundAttachment: 'fixed',
     marginLeft: b_margins,
     marginRight: b_margins,
     paddingTop: '100px',
-    height: '100%'
+    height: '100%',
+    width: '1000px',
+    minWidth: '1000px'
   }
 }));
 
@@ -39,6 +44,7 @@ function App() {
     section: "h4",
     sub_sec: "h5",
     body: "body1",
+    caption: "caption"
   }
 
   return (
@@ -47,7 +53,9 @@ function App() {
         <Router>
           <Route path="/" component={TopNav} />
           <Switch>
-              <Route path="/space-geo/exp-tools" component={ExpToolsPage} />
+              <Route path="/space-geo/exp-tools">
+                <ExpToolsPage v={format} />
+              </Route>
               <Route path="/space-geo/features" component={GeoFeaturesPage} />
               <Route path="/space-geo/moon">
                 <GeoMoonPage v={format} />
