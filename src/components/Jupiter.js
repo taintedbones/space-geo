@@ -1,12 +1,12 @@
 import { Grid, makeStyles, Typography } from "@material-ui/core";
-import JupiterImg from '../assets/Jupiter.png';
+import JupiterImg from '../assets/Jupiter/Jupiter.png';
 
 const useStyles = makeStyles((theme) => ({
   body: {
     justifyContent: "left",
   },
-  jupiterImg: {
-    maxWidth: "300px",
+  img: {
+    maxWidth: "100%",
     height: "auto",
     borderRadius: "5%",
   },
@@ -18,8 +18,8 @@ function Jupiter(props) {
   return (
     <div>
       <Grid container spacing={3} alignItems='center'>
-        <Grid item sm={12} md={4}>
-          <img src={JupiterImg} className={classes.jupiterImg} alt='Jupiter' />
+        <Grid item sm={12} md={5}>
+          <img src={JupiterImg} className={classes.img} alt='Jupiter' />
         </Grid>
         <Grid item sm={12} md={7}>
           <Typography variant={props.v.title}>Jupiter</Typography>
