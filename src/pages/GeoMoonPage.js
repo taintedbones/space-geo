@@ -1,16 +1,16 @@
-import { Grid, Typography, makeStyles } from "@material-ui/core";
-import MoonImg from "../assets/Moon.jpg";
-import HighlandsImg from "../assets/Moon-Highlands.jpg";
-import MariaImg from "../assets/Moon-Maria.jpg";
-import CraterImg from "../assets/Moon-Crater.jpg";
-import MariaRocksImg from "../assets/Moon-Maria-Rocks.jpg";
+import { Grid, makeStyles, Typography } from "@material-ui/core";
+import MoonImg from "../assets/Moon/Moon.jpg";
+import HighlandsImg from "../assets/Moon/Moon-Highlands.jpg";
+import MariaImg from "../assets/Moon/Moon-Maria.jpg";
+import CraterImg from "../assets/Moon/Moon-Crater.jpg";
+import MariaRocksImg from "../assets/Moon/Moon-Maria-Rocks.jpg";
 
 const useStyles = makeStyles((theme) => ({
   body: {
     justifyContent: "left",
   },
-  moonImg: {
-    maxWidth: "300px",
+  img: {
+    maxWidth: "100%",
     height: "auto",
     borderRadius: "5%",
   },
@@ -23,7 +23,7 @@ function GeoMoonPage(props) {
     <div className={classes.body}>
       <Grid container spacing={3} justify='space-evenly' alignItems='center'>
         <Grid item sm={12} md={4}>
-          <img src={MoonImg} className={classes.moonImg} alt='The Moon' />
+          <img src={MoonImg} className={classes.img} alt='The Moon' />
         </Grid>
         <Grid item sm={12} md={7}>
           <Typography variant={props.v.title}>The Moon</Typography>
@@ -72,17 +72,26 @@ function GeoMoonPage(props) {
         </Grid>
         <Grid item container direction="column" spacing={2} sm={12} md={4}>
           <Grid item>
-            <img src={MariaImg} className={classes.moonImg}
+            <img src={MariaImg} className={classes.img}
               alt='Layers of a section of Maria' />
+            <Grid item container justify="center">
+              <Typography variant={props.v.caption}>Maria layers</Typography>
+            </Grid>
           </Grid>
           <Grid item>
-            <img src={MariaRocksImg} className={classes.moonImg}
+            <img src={MariaRocksImg} className={classes.img}
               alt='Sample of basaltic Moon rock' />
+            <Grid item container justify="center">
+              <Typography variant={props.v.caption}>Basaltic Moon rock</Typography>
+            </Grid>
           </Grid>
         </Grid>
           <Grid item sm={12} md={4}>
-            <img src={HighlandsImg} className={classes.moonImg} 
+            <img src={HighlandsImg} className={classes.img} 
               alt='Astronaut on Lunar Highlands'/>
+            <Grid item container justify="center">
+              <Typography variant={props.v.caption}>Astronaut on Lunar Highlands</Typography>
+            </Grid>
           </Grid>
           <Grid item sm={12} md={7}>
             <Typography variant={props.v.section}>Lunar Highlands</Typography>
@@ -118,7 +127,10 @@ function GeoMoonPage(props) {
             </Typography>
           </Grid>
           <Grid item sm={12} md={4}>
-              <img src={CraterImg} className={classes.moonImg} alt='Lunar crater'/>
+              <img src={CraterImg} className={classes.img} alt='Lunar crater'/>
+            <Grid item container justify="center">
+              <Typography variant={props.v.caption}>Lunar crater</Typography>
+            </Grid>
           </Grid>
       </Grid>
     </div>
