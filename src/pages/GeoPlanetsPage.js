@@ -15,6 +15,9 @@ const useStyles = makeStyles((theme) => ({
     },
     tabPanel: {
       justifySelf: "center"
+    },
+    tabs: {
+      width: '100%'
     }
 }));
 
@@ -60,7 +63,8 @@ function GeoPlanetsPage(props) {
 
     return (
       <div>
-        <Tabs value={value} onChange={handleChange} indicatorColor="primary">
+        <Tabs value={value} onChange={handleChange} indicatorColor="primary"
+          variant='scrollable' scrollButtons='auto'>
           <Tab label="Mercury" {...a11yProps(0)}/>
           <Tab label="Venus" {...a11yProps(1)}/>
           <Tab label="Mars" {...a11yProps(2)}/>
