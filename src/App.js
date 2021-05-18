@@ -1,4 +1,4 @@
-import { makeStyles } from '@material-ui/core';
+import { Container, makeStyles } from '@material-ui/core';
 import { 
   BrowserRouter as Router,
   Route,
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: 'repeat-y',
     backgroundSize: '100%',
     backgroundAttachment: 'fixed',
-    height: '100vv'
+    height: '100%'
   },
   body: {
     background: 'white',
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: b_margins,
     marginRight: b_margins,
     paddingTop: '100px',
-    height: '100vv'
+    height: '100%'
   }
 }));
 
@@ -56,7 +56,9 @@ function App() {
                 <GeoPlanetsPage v={format} />
               </Route>
               <Route path="/space-geo/sources" component={SourcesPage} />
-              <Route path="/space-geo" component={HomePage} />
+              <Route path="/space-geo">
+                <HomePage v={format} />
+              </Route>
           </Switch>
         </Router>
       </div>
