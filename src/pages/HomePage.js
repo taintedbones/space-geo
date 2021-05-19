@@ -1,5 +1,6 @@
 import { Grid, Typography, makeStyles } from "@material-ui/core";
 import MilkyWayImg from "../assets/Milky-Way.jpg";
+import SpaceTimeline from "../components/Timeline.js";
 
 const useStyles = makeStyles((theme) => ({
   body: {
@@ -36,10 +37,13 @@ function HomePage(props) {
             planets, 7 asteroids, more than 100 objects as far as we know.
           </Typography>
         </Grid>
-        <Grid item sm>
+        <Grid item sm={12}>
             <Typography variant={props.v.section}>
                 Timeline of the Universe
             </Typography>
+        </Grid>
+        <Grid item sm={12}>
+            <SpaceTimeline />
         </Grid>
       </Grid>
     </div>
