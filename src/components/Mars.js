@@ -6,6 +6,7 @@ import CrossBeddingImg from "../assets/Mars/Mars-Cross-Bedding.jpg";
 import TopographicImg from "../assets/Mars/Mars-Topographic.jpg";
 import VolcanoImg from "../assets/Mars/Mars-Volcano.jpg";
 import PerserveranceImg from "../assets/Mars/Perserverance.jpg";
+import ImgCaption from "../components/ImgCaption.js";
 
 const useStyles = makeStyles((theme) => ({
   img: {
@@ -31,6 +32,11 @@ function Mars(props) {
       <Grid container spacing={3} justify="center" alignItems="center">
         <Grid item sm={12} md={5} className={classes.gridItem}>
           <img src={MarsImg} className={classes.img} alt="Mars" />
+          <ImgCaption
+            text="Mars"
+            url="https://solarsystem.nasa.gov/planets/mars/galleries/?page=0&per_page=25&order=created_at+desc&search=&href_query_params=category%3Dplanets_mars&button_class=big_more_button&tags=mars&condition_1=1%3Ais_in_resource_list&category=51"
+            source="NASA"
+          />
         </Grid>
         <Grid item sm={12} md={7} className={classes.gridItem}>
           <Typography variant={props.v.title}>Mars</Typography>
