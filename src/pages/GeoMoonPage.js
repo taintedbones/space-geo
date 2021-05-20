@@ -4,6 +4,7 @@ import HighlandsImg from "../assets/Moon/Moon-Highlands.jpg";
 import MariaImg from "../assets/Moon/Moon-Maria.jpg";
 import CraterImg from "../assets/Moon/Moon-Crater.jpg";
 import MariaRocksImg from "../assets/Moon/Moon-Maria-Rocks.jpg";
+import ImgCaption from "../components/ImgCaption.js";
 
 const useStyles = makeStyles((theme) => ({
   body: {
@@ -24,6 +25,11 @@ function GeoMoonPage(props) {
       <Grid container spacing={3} justify='space-evenly' alignItems='center'>
         <Grid item sm={12} md={4}>
           <img src={MoonImg} className={classes.img} alt='The Moon' />
+          <ImgCaption
+            text="The Moon"
+            url="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/opo9914d.jpg"
+            source="NASA"
+          />
         </Grid>
         <Grid item sm={12} md={7}>
           <Typography variant={props.v.title}>The Moon</Typography>
@@ -74,65 +80,73 @@ function GeoMoonPage(props) {
           <Grid item>
             <img src={MariaImg} className={classes.img}
               alt='Layers of a section of Maria' />
-            <Grid item container justify="center">
-              <Typography variant={props.v.caption}>Maria layers</Typography>
-            </Grid>
+            <ImgCaption
+              text="Layers of lunar Maria"
+              url="https://www.nasa.gov/images/content/580638main_080211a.jpg"
+              source="NASA"
+            />
           </Grid>
           <Grid item>
             <img src={MariaRocksImg} className={classes.img}
               alt='Sample of basaltic Moon rock' />
-            <Grid item container justify="center">
-              <Typography variant={props.v.caption}>Basaltic Moon rock</Typography>
-            </Grid>
+            <ImgCaption
+              text="Sample of a basaltic Moon rock"
+              url="https://history.nasa.gov/SP-350/i14-11a.jpg"
+              source="NASA"
+            />
           </Grid>
         </Grid>
-          <Grid item sm={12} md={4}>
-            <img src={HighlandsImg} className={classes.img} 
-              alt='Astronaut on Lunar Highlands'/>
-            <Grid item container justify="center">
-              <Typography variant={props.v.caption}>Astronaut on Lunar Highlands</Typography>
-            </Grid>
-          </Grid>
-          <Grid item sm={12} md={7}>
-            <Typography variant={props.v.section}>Lunar Highlands</Typography>
-            <Typography variant={props.v.body} paragraph>
-              The light regions of the Moon’s surface are called the lunar
-              highlands, originally named terrae from the Latin word for “land.”
-              Just as maria are compared to the Earth’s seas, the lunar
-              highlands look similar to Earth’s continents when viewed from the
-              naked eye.
-            </Typography>
-            <Typography variant={props.v.sub_sec}>Highland Rocks</Typography>
-            <Typography variant={props.v.body}>
-              The highlands are mostly made up of aluminum-rich rocks, giving
-              them a lower density and light color. Through radioactive dating,
-              researchers have found highland rock ages dating back 4 billion
-              years.
-            </Typography>
-          </Grid>
-          <Grid item sm={12} md={7}>
-            <Typography variant={props.v.section}>Craters</Typography>
-            <Typography variant={props.v.body}>
-              Craters can be found all over the Moon’s surface; however, they
-              are more prevalent in the highlands. Because there is no air on
-              the Moon, these impacts stay relatively preserved in space and are
-              the primary source of erosion. Using what we know about lunar rock
-              ages, scientists have been able to get an idea of the Moon’s
-              geologic record. It is believed that between 3.9 and 4.1 billion
-              years ago, after the lunar highlands had solidified, there was a
-              massive rise in meteoric impacts. During this time, some of the
-              impacts were so large and powerful that they cracked the Moon’s
-              crust, allowing lava to well up and fill the basins we know as the
-              maria.
-            </Typography>
-          </Grid>
-          <Grid item sm={12} md={4}>
-              <img src={CraterImg} className={classes.img} alt='Lunar crater'/>
-            <Grid item container justify="center">
-              <Typography variant={props.v.caption}>Lunar crater</Typography>
-            </Grid>
-          </Grid>
-      </Grid>
+        <Grid item sm={12} md={4}>
+          <img src={HighlandsImg} className={classes.img} 
+            alt='Astronaut on Lunar Highlands'/>
+          <ImgCaption
+            text="Astronaut on Lunar Highlands"
+            url="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/as16-113-18339.jpg"
+            source="NASA"
+          />
+        </Grid>
+        <Grid item sm={12} md={7}>
+          <Typography variant={props.v.section}>Lunar Highlands</Typography>
+          <Typography variant={props.v.body} paragraph>
+            The light regions of the Moon’s surface are called the lunar
+            highlands, originally named terrae from the Latin word for “land.”
+            Just as maria are compared to the Earth’s seas, the lunar
+            highlands look similar to Earth’s continents when viewed from the
+            naked eye.
+          </Typography>
+          <Typography variant={props.v.sub_sec}>Highland Rocks</Typography>
+          <Typography variant={props.v.body}>
+            The highlands are mostly made up of aluminum-rich rocks, giving
+            them a lower density and light color. Through radioactive dating,
+            researchers have found highland rock ages dating back 4 billion
+            years.
+          </Typography>
+        </Grid>
+        <Grid item sm={12} md={7}>
+          <Typography variant={props.v.section}>Craters</Typography>
+          <Typography variant={props.v.body}>
+            Craters can be found all over the Moon’s surface; however, they
+            are more prevalent in the highlands. Because there is no air on
+            the Moon, these impacts stay relatively preserved in space and are
+            the primary source of erosion. Using what we know about lunar rock
+            ages, scientists have been able to get an idea of the Moon’s
+            geologic record. It is believed that between 3.9 and 4.1 billion
+            years ago, after the lunar highlands had solidified, there was a
+            massive rise in meteoric impacts. During this time, some of the
+            impacts were so large and powerful that they cracked the Moon’s
+            crust, allowing lava to well up and fill the basins we know as the
+            maria.
+          </Typography>
+        </Grid>
+        <Grid item sm={12} md={4}>
+          <img src={CraterImg} className={classes.img} alt='Lunar crater'/>
+          <ImgCaption
+            text="Lunar Craters"
+            url="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/as11_44_6609.jpg"
+            source="NASA"
+          />
+        </Grid>
+        </Grid>
     </div>
   );
 }

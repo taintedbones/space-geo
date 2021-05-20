@@ -1,5 +1,6 @@
 import { Grid, makeStyles, Typography } from "@material-ui/core";
 import VenusImg from '../assets/Venus/Venus.png';
+import ImgCaption from "../components/ImgCaption.js";
 
 const useStyles = makeStyles((theme) => ({
   img: {
@@ -19,6 +20,11 @@ function Venus(props) {
         justify='center'>
           <Grid item sm={12} md={4}>
             <img src={VenusImg} className={classes.img} alt='Venus'/>
+              <ImgCaption
+              text="Venus"
+              url="https://solarsystem.nasa.gov/resources/2524/newly-processed-views-of-venus-from-mariner-10/"
+              source="NASA"
+            />
           </Grid>
           <Grid item sm={12} md={7}>
             <Typography variant={props.v.title}>Venus</Typography>

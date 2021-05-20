@@ -1,6 +1,7 @@
 import { Grid, Typography, makeStyles } from "@material-ui/core";
 import MilkyWayImg from "../assets/Milky-Way.jpg";
 import SpaceTimeline from "../components/Timeline.js";
+import ImgCaption from "../components/ImgCaption.js";
 
 const useStyles = makeStyles((theme) => ({
   body: {
@@ -29,6 +30,11 @@ function HomePage(props) {
             src={MilkyWayImg}
             className={classes.milkyWayImg}
             alt="Milky Way Galaxy"
+          />
+          <ImgCaption
+            text="Panoramic of the Solar System"
+            url="https://solarsystem.nasa.gov/solar-system/our-solar-system/galleries/?page=1&per_page=25&order=created_at+desc&search=&fancybox=true&href_query_params=category%3Dsolar-system_our-solar-system&button_class=big_more_button&tags=our+solar+system&condition_1=1%3Ais_in_resource_list&category=51"
+            source="NASA"
           />
         </Grid>
         <Grid item sm={12}>

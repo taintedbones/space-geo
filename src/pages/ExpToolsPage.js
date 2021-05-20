@@ -7,6 +7,7 @@ import PerseveranceImg from "../assets/ExpTools/Perseverance-Rover.jpg";
 import RadarMapImg from "../assets/ExpTools/Radar-Map.jpg";
 import VeritasRadarImg from "../assets/ExpTools/Veritas-Radar.jpg";
 import SMBlackHoleSimImg from "../assets/ExpTools/SM-Black-Hole-Sim.gif";
+import ImgCaption from "../components/ImgCaption.js";
 
 const useStyles = makeStyles((theme) => ({
   img: {
@@ -37,9 +38,16 @@ function ExpToolsPage(props) {
         </Grid>
         <Grid item sm={4}>
           <img src={HubbleImg} alt="Hubble Telescope" className={classes.img} />
+          <ImgCaption
+            text="Hubble Telescope in Space"
+            url="https://images.nasa.gov/details-GSFC_20171208_Archive_e002151"
+            source="NASA"
+          />
         </Grid>
         <Grid item sm={6}>
-          <Typography variant={props.v.section} paragraph>Telescopes</Typography>
+          <Typography variant={props.v.section} paragraph>
+            Telescopes
+          </Typography>
           <Divider />
           <Typography variant={props.v.body}>
             In the same way that geologists would use a telescope to view
@@ -53,7 +61,9 @@ function ExpToolsPage(props) {
           </Typography>
         </Grid>
         <Grid item sm={6}>
-          <Typography variant={props.v.section} paragraph>Rovers & Landers</Typography>
+          <Typography variant={props.v.section} paragraph>
+            Rovers & Landers
+          </Typography>
           <Divider />
           <Typography variant={props.v.body}>
             To get a closer look at other objects in space, space agencies such
@@ -71,29 +81,48 @@ function ExpToolsPage(props) {
         </Grid>
         <Grid item sm={4}>
           <img src={InSightImg} alt="InSight Lander" className={classes.img} />
+          <ImgCaption
+            text="InSight Lander on Mars"
+            url="https://mars.nasa.gov/insight/"
+            source="NASA"
+          />
           <img
             src={PerseveranceImg}
             alt="Perseverance Rover"
             className={classes.img}
           />
+          <ImgCaption
+            text="Perseverance Rover on Mars"
+            url="https://mars.nasa.gov/mars2020/"
+            source="NASA"
+          />
         </Grid>
-        {/* <Grid item sm={6}>
-            <img src={PerseveranceImg} alt='Perseverance Rover' className={classes.img} />
-        </Grid> */}
         <Grid item sm={4}>
           <img
             src={MessengerImg}
             alt="Messenger Probe"
             className={classes.img}
           />
+          <ImgCaption
+            text="Artistic rendition of Messenger Probe in front of Mercury"
+            url="https://www.nasa.gov/content/nasa-s-messenger-spacecraft-10-years-in-space"
+            source="NASA"
+          />
           <img
             src={ParkerSolarImg}
             alt="Parker Solar Probe"
             className={classes.img}
           />
+          <ImgCaption
+            text="Artistic rendition of Parker Solar Probe in front of Sun"
+            url="https://www.nasa.gov/sites/default/files/thumbnails/image/spp_observingsun2_0_0.jpg"
+            source="NASA"
+          />
         </Grid>
         <Grid item sm={6}>
-          <Typography variant={props.v.section} paragraph>Space Probes</Typography>
+          <Typography variant={props.v.section} paragraph>
+            Space Probes
+          </Typography>
           <Divider />
           <Typography variant={props.v.body}>
             Space probes are spacecraft sent into space to observe and collect
@@ -112,11 +141,10 @@ function ExpToolsPage(props) {
             and understanding the geology of other planets.
           </Typography>
         </Grid>
-        {/* <Grid item sm={5}>
-            <img src={ParkerSolarImg} alt='Parker Solar Probe' className={classes.img} />
-        </Grid> */}
         <Grid item sm={6}>
-          <Typography variant={props.v.section} paragraph>Radar</Typography>
+          <Typography variant={props.v.section} paragraph>
+            Radar
+          </Typography>
           <Divider />
           <Typography variant={props.v.body}>
             Radar allows researchers to penetrate the atmosphere of other
@@ -139,10 +167,20 @@ function ExpToolsPage(props) {
             alt="Veritas Radar Art Concept"
             className={classes.img}
           />
+          <ImgCaption
+            text="Artist's concept of VERITAS spacecraft using radar technology"
+            url="https://www.jpl.nasa.gov/news/veritas-exploring-the-deep-truths-of-venus"
+            source="NASA"
+          />
           <img
             src={RadarMapImg}
             alt="Map of Venus made by Radar"
             className={classes.img}
+          />
+          <ImgCaption
+            text="Topographical Map of Venus made from radar"
+            url="https://solarsystem.nasa.gov/resources/486/hemispheric-view-of-venus/"
+            source="NASA"
           />
         </Grid>
         <Grid item sm={10}>
@@ -171,6 +209,11 @@ function ExpToolsPage(props) {
             src={SMBlackHoleSimImg}
             alt="Super Massive Black Hole Simulation"
             className={classes.img}
+          />
+          <ImgCaption
+            text="Super Massive Black Hole Simulation"
+            url="https://www.nasa.gov/feature/goddard/2018/new-simulation-sheds-light-on-spiraling-supermassive-black-holes"
+            source="NASA"
           />
         </Grid>
       </Grid>
