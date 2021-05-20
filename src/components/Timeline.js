@@ -50,6 +50,20 @@ function SpaceTimeline() {
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
+          <TimelineOppositeContent>~ 4.6 bya</TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot>
+                <GiSpikyExplosion className={classes.icon} />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Paper elevation={3} className={classes.earthPaper}>
+              Archean Eon begins
+            </Paper>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
           <TimelineOppositeContent>~ 4.59 bya</TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot>
@@ -135,8 +149,9 @@ function SpaceTimeline() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Paper elevation={3} className={classes.spacePaper}>
-                First eukaryotes on Earth
+            <Paper elevation={3} className={classes.earthPaper}>
+                Proterozoic Eon begins 
+                - First eukaryotes on Earth
             </Paper>
           </TimelineContent>
         </TimelineItem>
