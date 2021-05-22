@@ -1,6 +1,5 @@
 import { Grid, makeStyles, Typography } from "@material-ui/core";
 import MarsImg from "../assets/Mars/Mars.jpg";
-import VallesMarinerisImg from "../assets/Mars/Valles-Marineris.jpg";
 import ChannelsImg from "../assets/Mars/Mars-Channels.jpg";
 import CrossBeddingImg from "../assets/Mars/Mars-Cross-Bedding.jpg";
 import TopographicImg from "../assets/Mars/Mars-Topographic.jpg";

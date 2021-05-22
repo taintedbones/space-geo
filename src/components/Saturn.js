@@ -2,7 +2,6 @@ import { Grid, makeStyles, Typography } from "@material-ui/core";
 import SaturnImg from "../assets/Saturn/Saturn.jpg";
 import SaturnRingsImg from "../assets/Saturn/Saturn-Rings.jpg";
 import SaturnHexImg from "../assets/Saturn/Saturn-Hexagon.jpg";
-import NorthPoleImg from "../assets/Saturn/Saturn-North-Pole.jpg";
 import SouthPoleImg from "../assets/Saturn/Saturn-South-Pole.jpg";
 import ImgCaption from "../components/ImgCaption.js";
 

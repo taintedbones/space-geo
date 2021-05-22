@@ -55,7 +55,7 @@ function Uranus(props) {
           </Typography>
         </Grid>
         <Grid item xs={6}>
-          <img src={UranusAtmosImg} alt="Detailed photo or Uranus's Atmosphere" className={classes.img} />
+          <img src={UranusAtmosImg} alt="Detailed Uranus's Atmosphere" className={classes.img} />
           <ImgCaption
             text="Detailed photo or Uranus's Atmosphere"
             url="https://solarsystem.nasa.gov/resources/455/uranus-in-detail/?category=planets_uranus"
