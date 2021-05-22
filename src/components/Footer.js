@@ -18,7 +18,7 @@ function AppFooter() {
   return (
     <div className={classes.body}>
       <Typography variant="button">
-        <center>Webpage designed and create by: Kierstyn Just</center>
+        <center>Webpage designed and created by: Kierstyn Just</center>
       </Typography>
     </div>
   );
