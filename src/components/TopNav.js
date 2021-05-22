@@ -3,21 +3,25 @@ import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     appbar: {
-        position: "fixed",
-        display: "block",
+        position: "relative",
+        width: "100%",
+        display: "flex",
+        flexDirection: "row",
         background: "darkslateblue",
         alignItems:'center',
-        justifyContent: 'center'
+        paddingLeft: "5%",
+        marginBottom: "15px"
     },
     button: {
-        maxWidth: "150px",
-        height: "80px",
+        height: "70px",
+        width: "100%",
         variant: "outlined",
         color: "white"
     },
     link: {
         textDecoration: "none",
         color: "white",
+        width: "150px"
     }
 }));
 

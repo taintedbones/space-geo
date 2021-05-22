@@ -1,6 +1,7 @@
 import { Grid, makeStyles, Typography } from "@material-ui/core";
 import NeptuneImg from '../assets/Neptune/Neptune.jpg';
 import NeptuneRingsImg from '../assets/Neptune/Neptune-Rings.jpg';
+import ImgCaption from "../components/ImgCaption.js";
 
 const useStyles = makeStyles((theme) => ({
   body: {
@@ -10,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "100%",
     height: "auto",
     borderRadius: "5%"
-  }
+  },
 }));
 
 function Neptune(props) {
@@ -18,9 +19,14 @@ function Neptune(props) {
 
   return (
     <div>
-      <Grid container spacing={3} alignItems='center'>
+      <Grid container spacing={3} alignItems='center' justify='space-evenly'>
         <Grid item sm={5}>
           <img src={NeptuneImg} alt='Neptune' className={classes.img} />
+          <ImgCaption
+            text="Neptune"
+            url="https://solarsystem.nasa.gov/system/resources/detail_files/611_PIA01492.jpg"
+            source="NASA"
+          />
         </Grid>
         <Grid item sm={7}>
           <Typography variant={props.v.title}>Neptune</Typography>
@@ -65,6 +71,11 @@ function Neptune(props) {
         </Grid>
         <Grid item sm={5}>
           <img src={NeptuneRingsImg} alt='Rings of Neptune' className={classes.img} />
+          <ImgCaption
+            text="Rings of Neptune"
+            url="https://solarsystem.nasa.gov/system/resources/detail_files/249_PIA02207.jpg"
+            source="NASA"
+          />
         </Grid>
       </Grid>
     </div>

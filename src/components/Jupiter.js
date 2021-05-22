@@ -1,5 +1,8 @@
 import { Grid, makeStyles, Typography } from "@material-ui/core";
 import JupiterImg from "../assets/Jupiter/Jupiter.png";
+import GreatRedSpotImg from "../assets/Jupiter/Great-Red-Spot.jpg";
+import JupiterCloudsImg from "../assets/Jupiter/Jupiter-Clouds.jpg";
+import ImgCaption from "../components/ImgCaption.js";
 
 const useStyles = makeStyles((theme) => ({
   body: {
@@ -17,9 +20,14 @@ function Jupiter(props) {
 
   return (
     <div>
-      <Grid container spacing={3} alignItems="center">
+      <Grid container spacing={3} alignItems="center" justify="space-evenly">
         <Grid item sm={12} md={5}>
           <img src={JupiterImg} className={classes.img} alt="Jupiter" />
+          <ImgCaption
+            text="Jupiter"
+            url="https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/jupapr3color-jd-170304_0.png?itok=IXyrTvHD"
+            source="NASA"
+          />
         </Grid>
         <Grid item sm={12} md={7}>
           <Typography variant={props.v.title}>Jupiter</Typography>
@@ -40,7 +48,7 @@ function Jupiter(props) {
             it.
           </Typography>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={7}>
           <Typography variant={props.v.section}>Jupiter's Clouds</Typography>
           <Typography variant={props.v.body}>
             Jupiter’s clouds are a banded structure in the planet’s atmosphere
@@ -61,7 +69,23 @@ function Jupiter(props) {
             spread around the entire planet.
           </Typography>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={5}>
+          <img src={JupiterCloudsImg} alt="Clouds of Jupiter" className={classes.img} />
+          <ImgCaption
+            text="Clouds of Jupiter"
+            url="https://www.nasa.gov/image-feature/jpl/chaotic-clouds-of-jupiter"
+            source="NASA"
+          />
+        </Grid>
+        <Grid item xs={4}>
+          <img src={GreatRedSpotImg} alt="Jupiter's Great Red Spot" className={classes.img} />
+          <ImgCaption
+            text="Jupiter's Great Red Spot"
+            url="https://solarsystem.nasa.gov/system/resources/detail_files/626_PIA21775.jpg"
+            source="NASA"
+          />
+        </Grid>
+        <Grid item xs={7}>
           <Typography variant={props.v.section}>Great Red Spot</Typography>
           <Typography variant={props.v.body} paragraph>
             Based on observations made by Voyager and Galileo, we know that

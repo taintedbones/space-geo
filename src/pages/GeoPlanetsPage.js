@@ -70,8 +70,8 @@ function GeoPlanetsPage(props) {
           <Tab label="Mars" {...a11yProps(2)}/>
           <Tab label="Jupiter" {...a11yProps(3)}/>
           <Tab label="Saturn" {...a11yProps(4)}/>
-          <Tab label="Neptune" {...a11yProps(5)}/>
           <Tab label="Uranus" {...a11yProps(6)}/>
+          <Tab label="Neptune" {...a11yProps(5)}/>
         </Tabs>
         {/* <Typography variant="h4">Geology of the Planets Page</Typography> */}
         <TabPanel value={value} index={0}>
@@ -90,10 +90,10 @@ function GeoPlanetsPage(props) {
             <Saturn v={props.v} />
         </TabPanel>
         <TabPanel value={value} index={5}>
-            <Neptune v={props.v} />
+            <Uranus v={props.v} />
         </TabPanel>
         <TabPanel value={value} index={6}>
-            <Uranus v={props.v} />
+            <Neptune v={props.v} />
         </TabPanel>
       </div>
     );

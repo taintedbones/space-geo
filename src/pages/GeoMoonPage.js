@@ -7,9 +7,6 @@ import MariaRocksImg from "../assets/Moon/Moon-Maria-Rocks.jpg";
 import ImgCaption from "../components/ImgCaption.js";
 
 const useStyles = makeStyles((theme) => ({
-  body: {
-    justifyContent: "left",
-  },
   img: {
     maxWidth: "100%",
     height: "auto",
@@ -21,7 +18,7 @@ function GeoMoonPage(props) {
   const classes = useStyles();
 
   return (
-    <div className={classes.body}>
+    <div>
       <Grid container spacing={3} justify='space-evenly' alignItems='center'>
         <Grid item sm={12} md={4}>
           <img src={MoonImg} className={classes.img} alt='The Moon' />

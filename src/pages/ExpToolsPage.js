@@ -1,4 +1,4 @@
-import { Divider, Grid, makeStyles, Typography } from "@material-ui/core";
+import { Grid, makeStyles, Typography } from "@material-ui/core";
 import HubbleImg from "../assets/ExpTools/Hubble-Telescope.jpg";
 import InSightImg from "../assets/ExpTools/InSight-Lander.jpg";
 import MessengerImg from "../assets/ExpTools/Messenger-Probe.jpg";
@@ -23,8 +23,8 @@ function ExpToolsPage(props) {
   return (
     <div>
       <Grid container spacing={3} alignItems="center" justify="center">
-        <Grid item sm={11}>
-          <Typography variant={props.v.title} paragraph>
+        <Grid item xs={11}>
+          <Typography variant={props.v.title}>
             Space Exploration Tools
           </Typography>
           <Typography variant={props.v.body}>
@@ -36,7 +36,7 @@ function ExpToolsPage(props) {
             technologies used to study our solar system.
           </Typography>
         </Grid>
-        <Grid item sm={4}>
+        <Grid item xs={4}>
           <img src={HubbleImg} alt="Hubble Telescope" className={classes.img} />
           <ImgCaption
             text="Hubble Telescope in Space"
@@ -44,11 +44,10 @@ function ExpToolsPage(props) {
             source="NASA"
           />
         </Grid>
-        <Grid item sm={6}>
-          <Typography variant={props.v.section} paragraph>
+        <Grid item xs={6}>
+          <Typography variant={props.v.section}>
             Telescopes
           </Typography>
-          <Divider />
           <Typography variant={props.v.body}>
             In the same way that geologists would use a telescope to view
             regions far away, they can also be used to see objects in space.
@@ -60,11 +59,10 @@ function ExpToolsPage(props) {
             10-15 billion lightyears away.
           </Typography>
         </Grid>
-        <Grid item sm={6}>
-          <Typography variant={props.v.section} paragraph>
+        <Grid item xs={6}>
+          <Typography variant={props.v.section}>
             Rovers & Landers
           </Typography>
-          <Divider />
           <Typography variant={props.v.body}>
             To get a closer look at other objects in space, space agencies such
             as NASA have used rovers and landers. These machines allow
@@ -79,7 +77,7 @@ function ExpToolsPage(props) {
             images, infrared readings, and data samples.
           </Typography>
         </Grid>
-        <Grid item sm={4}>
+        <Grid item xs={4}>
           <img src={InSightImg} alt="InSight Lander" className={classes.img} />
           <ImgCaption
             text="InSight Lander on Mars"
@@ -97,7 +95,7 @@ function ExpToolsPage(props) {
             source="NASA"
           />
         </Grid>
-        <Grid item sm={4}>
+        <Grid item xs={4}>
           <img
             src={MessengerImg}
             alt="Messenger Probe"
@@ -119,11 +117,10 @@ function ExpToolsPage(props) {
             source="NASA"
           />
         </Grid>
-        <Grid item sm={6}>
-          <Typography variant={props.v.section} paragraph>
+        <Grid item xs={6}>
+          <Typography variant={props.v.section}>
             Space Probes
           </Typography>
-          <Divider />
           <Typography variant={props.v.body}>
             Space probes are spacecraft sent into space to observe and collect
             data for researchers to study. These probes do not carry any humans
@@ -141,11 +138,10 @@ function ExpToolsPage(props) {
             and understanding the geology of other planets.
           </Typography>
         </Grid>
-        <Grid item sm={6}>
-          <Typography variant={props.v.section} paragraph>
+        <Grid item xs={6}>
+          <Typography variant={props.v.section}>
             Radar
           </Typography>
-          <Divider />
           <Typography variant={props.v.body}>
             Radar allows researchers to penetrate the atmosphere of other
             planets and record the planet’s surface and topographic features.
@@ -161,7 +157,7 @@ function ExpToolsPage(props) {
             bright spots because more energy was reflected back.
           </Typography>
         </Grid>
-        <Grid item sm={4}>
+        <Grid item xs={4}>
           <img
             src={VeritasRadarImg}
             alt="Veritas Radar Art Concept"
@@ -183,11 +179,10 @@ function ExpToolsPage(props) {
             source="NASA"
           />
         </Grid>
-        <Grid item sm={10}>
-          <Typography variant={props.v.section} paragraph>
+        <Grid item xs={10}>
+          <Typography variant={props.v.section}>
             Models & Simulations
           </Typography>
-          <Divider />
           <Typography variant={props.v.body}>
             Models and simulations play a crucial part in studying geological
             events and features throughout our solar system. They allow
@@ -204,7 +199,7 @@ function ExpToolsPage(props) {
             models and simulations enable us to make sense of that data.
           </Typography>
         </Grid>
-        <Grid item sm={9}>
+        <Grid item xs={9}>
           <img
             src={SMBlackHoleSimImg}
             alt="Super Massive Black Hole Simulation"

@@ -29,7 +29,7 @@ function Mars(props) {
 
   return (
     <div>
-      <Grid container spacing={3} justify="center" alignItems="center">
+      <Grid container spacing={3} justify="space-evenly" alignItems="center">
         <Grid item sm={12} md={5} className={classes.gridItem}>
           <img src={MarsImg} className={classes.img} alt="Mars" />
           <ImgCaption
@@ -41,7 +41,7 @@ function Mars(props) {
         <Grid item sm={12} md={7} className={classes.gridItem}>
           <Typography variant={props.v.title}>Mars</Typography>
           <Typography variant={props.v.body} paragraph>
-            Mars is the easiest planet for us to observe because it is the
+            Mars is the fourth planet from the Sun and the easiest for us to observe because it is the
             closest. Because of it’s axial tilt and unusual orbit, the planet
             experiences slow seasonal changes throughout its period of a year.
             Based on the current season, Mars’s polar ice caps grow or shrink.
@@ -69,11 +69,11 @@ function Mars(props) {
             alt="Topographic Map of Mars"
             className={classes.topoImg}
           />
-          <Grid item container justify="center" sm={12}>
-            <Typography variant={props.v.caption}>
-              Topographic map of Mars
-            </Typography>
-          </Grid>
+          <ImgCaption
+            text="Topographic map of Mars"
+            url="https://www.planetary.org/space-images/map-mars-major-features"
+            source="The Planetary Society"
+          />
         </Grid>
         <Grid item sm={6}>
           <Typography variant={props.v.sub_sec}>Tharsis Bulge</Typography>
@@ -129,9 +129,11 @@ function Mars(props) {
         </Grid>
         <Grid item xs={12} sm={4}>
           <img src={VolcanoImg} alt="Mars Volcano" className={classes.img} />
-          <Grid item container justify="center">
-            <Typography variant={props.v.caption}>Volcano on Mars</Typography>
-          </Grid>
+          <ImgCaption
+            text="Volcano on Mars"
+            url="https://mars.nasa.gov/system/resources/detail_files/7664_Mars-viking-orbiter-olympus-mons-volcano-full2.jpg"
+            source="NASA"
+          />          
         </Grid>
         <Grid item xs={12} sm={7}>
           <Typography variant={props.v.section}>Volcanoes on Mars</Typography>
@@ -183,33 +185,33 @@ function Mars(props) {
         </Grid>
         <Grid item xs={12} sm={5}>
           <img src={ChannelsImg} alt="Mars Channels" className={classes.img} />
-          <Grid item container justify="center">
-            <Typography variant={props.v.caption}>
-              Suspected Water Channels on Mars (Source: NASA)
-            </Typography>
-          </Grid>
+          <ImgCaption
+            text="Suspected Water Channels on Mars"
+            url="https://mars.nasa.gov/system/resources/detail_files/6091_sred2_s24-full2.jpg"
+            source="NASA"
+          />
           <img
             src={CrossBeddingImg}
             alt="Mars Crossbedding"
             className={classes.img}
           />
-          <Grid item container justify="center">
-            <Typography variant={props.v.caption}>
-              Crossbedding in Mars rocks (Source: NASA)
-            </Typography>
-          </Grid>
+          <ImgCaption
+            text="Crossbedding in Mars rocks"
+            url="https://mars.nasa.gov/system/resources/detail_files/6870_mars-curiosity-rover-water-loose-bed-layer-whale-rocks-pia19076-full2.jpg"
+            source="NASA"
+          />
         </Grid>
         <Grid item xs={12} sm={5}>
           <img
             src={PerserveranceImg}
-            alt="Perserverance on Mars"
+            alt="Perseverance on Mars"
             className={classes.img}
           />
-          <Grid item container justify="center">
-            <Typography variant={props.v.caption}>
-              Perserverance Rover Selfie on Mars (Source: NASA)
-            </Typography>
-          </Grid>
+          <ImgCaption
+            text="Perseverance Rover Selfie on Mars"
+            url="https://mars.nasa.gov/system/resources/detail_files/25689_PIA24487-web.jpg"
+            source="NASA"
+          />
         </Grid>
         <Grid item xs={12} sm={7}>
           <Typography variant={props.v.section}>

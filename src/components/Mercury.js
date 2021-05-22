@@ -1,11 +1,14 @@
 import { Grid, makeStyles, Typography } from "@material-ui/core";
-import MercuryImg from "../assets/Mercury.jpg";
+import ImgCaption from "../components/ImgCaption.js";
+import MercuryImg from "../assets/Mercury/Mercury.jpg";
+import MercurySurfaceImg from "../assets/Mercury/Mercury-Surface.jpg";
+import MercuryScarpImg from "../assets/Mercury/Mercury-Scarp.jpg";
 
 const useStyles = makeStyles((theme) => ({
   body: {
     justifyContent: "left",
   },
-  mercuryImg: {
+  img: {
     maxWidth: "100%",
     height: "auto",
     borderRadius: "5%",
@@ -17,9 +20,14 @@ function Mercury(props) {
 
   return (
     <div>
-      <Grid container spacing={3} alignItems="center">
-        <Grid item sm={12} md={5}>
-          <img src={MercuryImg} className={classes.mercuryImg} alt="Mercury" />
+      <Grid container spacing={2} alignItems="center" justify="space-evenly">
+        <Grid item sm={12} md={4}>
+          <img src={MercuryImg} className={classes.img} alt="Mercury" />
+          <ImgCaption
+            text="Mercury"
+            url="https://solarsystem.nasa.gov/system/resources/detail_files/439_MercurySubtleColors1200w.jpg"
+            source="NASA"
+          />
         </Grid>
         <Grid item sm={12} md={7}>
           <Typography variant={props.v.title}>Mercury</Typography>
@@ -37,7 +45,7 @@ function Mercury(props) {
             degrees Fahrenheit.
           </Typography>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={7}>
           <Typography variant={props.v.section}>
             Mercury's Rocky Surface
           </Typography>
@@ -54,7 +62,23 @@ function Mercury(props) {
             Mercury’s crust was formed.
           </Typography>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={4}>
+          <img src={MercurySurfaceImg} alt="Mercury's cratered surface"  className={classes.img} />
+          <ImgCaption
+            text="Mercury's cratered surface"
+            url="https://solarsystem.nasa.gov/resources/769/the-beauty-of-calibration/?category=planets_mercury"
+            source="NASA"
+          />
+        </Grid>
+        <Grid item xs={4}>
+          <img src={MercuryScarpImg} alt='Scarp on Mercury' className={classes.img} />
+          <ImgCaption
+            text="Scarp on Mercury"
+            url="https://photojournal.jpl.nasa.gov/catalog/PIA12054"
+            source="NASA - JPL"
+          />
+        </Grid>
+        <Grid item xs={7}>
           <Typography variant={props.v.sub_sec}>Mercury's Scarp</Typography>
           <Typography variant={props.v.body}>
             Mercury’s scarp is a cliff on the planet’s surface that stretches
