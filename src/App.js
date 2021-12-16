@@ -1,5 +1,5 @@
 import { makeStyles } from "@material-ui/core";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter, BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ExpToolsPage from "./pages/ExpToolsPage";
 import GeoFeaturesPage from "./pages/GeoFeaturesPage";
@@ -48,30 +48,32 @@ function App() {
   return (
     <div className={classes.app}>
       <div className={classes.body}>
-        <Router>
+        {/* <Router> */}
+        <HashRouter basename="/">
           <Route path="/" component={TopNav} />
           <Switch>
-            <Route path="/space-geo/exp-tools">
+            <Route path="/exp-tools">
               <ExpToolsPage v={format} />
             </Route>
-            <Route path="/space-geo/features">
+            <Route path="/features">
               <GeoFeaturesPage v={format} />
             </Route>
-            <Route path="/space-geo/moon">
+            <Route path="/moon"> 
               <GeoMoonPage v={format} />
             </Route>
-            <Route path="/space-geo/planets">
+            <Route path="/planets">
               <GeoPlanetsPage v={format} />
             </Route>
-            <Route path="/space-geo/sources">
+            <Route path="/sources">
               <SourcesPage v={format} />
             </Route>
-            <Route path="/space-geo">
+            <Route path="/">
               <HomePage v={format} />
             </Route>            
           </Switch>
           <Route path="/" component={AppFooter} />          
-        </Router>
+        {/* </Router> */}
+        </HashRouter>
       </div>
     </div>
   );

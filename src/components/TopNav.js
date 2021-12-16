@@ -31,32 +31,32 @@ function TopNav() {
     return (
         <div>
             <AppBar className={classes.appbar}>
-                <Link className={classes.link} to='/space-geo'>
+                <Link className={classes.link} to='/'>
                     <Button className={classes.button} variant="outlined">
                         Home
                     </Button>
                 </Link>
-                <Link className={classes.link} to='/space-geo/exp-tools'>
+                <Link className={classes.link} to='/exp-tools'>
                     <Button className={classes.button} variant="outlined">
                         Exploration Tools                    
                     </Button>
                 </Link>
-                <Link className={classes.link} to='/space-geo/features'>
+                <Link className={classes.link} to='/features'>
                     <Button className={classes.button} variant="outlined">                    
                         Geological Features                    
                     </Button>
                 </Link>
-                <Link className={classes.link} to='/space-geo/moon'>
+                <Link className={classes.link} to='/moon'>
                     <Button className={classes.button} variant="outlined">                    
                         Geology of the Moon                    
                     </Button>
                 </Link>
-                <Link className={classes.link} to='/space-geo/planets'>
+                <Link className={classes.link} to='/planets'>
                     <Button className={classes.button} variant="outlined">
                         Geology of the Planets                    
                     </Button>
                 </Link>
-                <Link className={classes.link} to='/space-geo/sources'>
+                <Link className={classes.link} to='/sources'>
                     <Button className={classes.button} variant="outlined">                    
                         Sources                    
                     </Button>
