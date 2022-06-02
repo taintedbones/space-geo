@@ -36,7 +36,7 @@ function GeoFeaturesPage(props) {
             better.
           </Typography>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={11} sm={5}>
           <img
             src={VolcanoImg}
             alt="Idunn Mons volcano on Venus"
@@ -60,7 +60,7 @@ function GeoFeaturesPage(props) {
             Mercury, where those areas are made up of hardened magma.{" "}
           </Typography>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={11} sm={5}>
           <img
             src={WeatheringImg}
             alt="Before and After of Mars dust storm"
@@ -83,7 +83,7 @@ function GeoFeaturesPage(props) {
             planets’ surfaces, creating ripples and sand dunes.
           </Typography>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={11} sm={5}>
           <img
             src={ImpactCraterImg}
             alt="Impact craters on the Moon"
@@ -102,7 +102,7 @@ function GeoFeaturesPage(props) {
             shockwaves occur that melt and recrystallize rock
           </Typography>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={11} sm={5}>
           <img
             src={StormsImg}
             alt="Storm system on Jupiter's north pole"

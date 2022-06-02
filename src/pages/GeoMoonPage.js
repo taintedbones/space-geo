@@ -20,7 +20,7 @@ function GeoMoonPage(props) {
   return (
     <div>
       <Grid container spacing={3} justify='space-evenly' alignItems='center'>
-        <Grid item sm={12} md={4}>
+        <Grid item xs={11} sm={4}>
           <img src={MoonImg} className={classes.img} alt='The Moon' />
           <ImgCaption
             text="The Moon"
@@ -28,7 +28,7 @@ function GeoMoonPage(props) {
             source="NASA"
           />
         </Grid>
-        <Grid item sm={12} md={7}>
+        <Grid item xs={11} sm={7}>
           <Typography variant={props.v.title}>The Moon</Typography>
           <Typography variant={props.v.body} gutterBottom>
             We know from the age of lunar rocks that the Moon at least partially
@@ -43,7 +43,7 @@ function GeoMoonPage(props) {
             is unlikely they formed independently but instead subsequentially.
           </Typography>
         </Grid>
-        <Grid item sm={12} md={7}>
+        <Grid item xs={11} sm={7}>
           <Typography variant={props.v.section}>
             Maria -- the ancient dark lava seas of the Moon
           </Typography>
@@ -73,7 +73,7 @@ function GeoMoonPage(props) {
             dating back 3.2 to 3.9 billion years
           </Typography>
         </Grid>
-        <Grid item container direction="column" spacing={2} sm={12} md={4}>
+        <Grid item container direction="column" spacing={2} xs={11} sm={4}>
           <Grid item>
             <img src={MariaImg} className={classes.img}
               alt='Layers of a section of Maria' />
@@ -93,7 +93,7 @@ function GeoMoonPage(props) {
             />
           </Grid>
         </Grid>
-        <Grid item sm={12} md={4}>
+        <Grid item xs={11} sm={4}>
           <img src={HighlandsImg} className={classes.img} 
             alt='Astronaut on Lunar Highlands'/>
           <ImgCaption
@@ -102,7 +102,7 @@ function GeoMoonPage(props) {
             source="NASA"
           />
         </Grid>
-        <Grid item sm={12} md={7}>
+        <Grid item xs={11} sm={7}>
           <Typography variant={props.v.section}>Lunar Highlands</Typography>
           <Typography variant={props.v.body} paragraph>
             The light regions of the Moon’s surface are called the lunar
@@ -119,7 +119,7 @@ function GeoMoonPage(props) {
             years.
           </Typography>
         </Grid>
-        <Grid item sm={12} md={7}>
+        <Grid item xs={11} sm={7}>
           <Typography variant={props.v.section}>Craters</Typography>
           <Typography variant={props.v.body}>
             Craters can be found all over the Moon’s surface; however, they
@@ -135,7 +135,7 @@ function GeoMoonPage(props) {
             maria.
           </Typography>
         </Grid>
-        <Grid item sm={12} md={4}>
+        <Grid item xs={11} sm={4}>
           <img src={CraterImg} className={classes.img} alt='Lunar crater'/>
           <ImgCaption
             text="Lunar Craters"

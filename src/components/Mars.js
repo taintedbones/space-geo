@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
   },
   topoImg: {
-    width: "80%",
+    width: "100%",
     borderRadius: "2%",
   },
 }));
@@ -29,7 +29,7 @@ function Mars(props) {
   return (
     <div>
       <Grid container spacing={3} justify="space-evenly" alignItems="center">
-        <Grid item sm={12} md={5} className={classes.gridItem}>
+        <Grid item xs={12} sm={5} className={classes.gridItem}>
           <img src={MarsImg} className={classes.img} alt="Mars" />
           <ImgCaption
             text="Mars"
@@ -37,7 +37,7 @@ function Mars(props) {
             source="NASA"
           />
         </Grid>
-        <Grid item sm={12} md={7} className={classes.gridItem}>
+        <Grid item xs={12} sm={7} className={classes.gridItem}>
           <Typography variant={props.v.title}>Mars</Typography>
           <Typography variant={props.v.body} paragraph>
             Mars is the fourth planet from the Sun and the easiest for us to observe because it is the
@@ -74,7 +74,7 @@ function Mars(props) {
             source="The Planetary Society"
           />
         </Grid>
-        <Grid item sm={6}>
+        <Grid item xs={12} sm={6}>
           <Typography variant={props.v.sub_sec}>Tharsis Bulge</Typography>
           <Typography variant={props.v.body} paragraph>
             The Tharsis Bulge is the youngest region on Mars, estimated to be
@@ -84,7 +84,7 @@ function Mars(props) {
             to a continent.
           </Typography>
         </Grid>
-        <Grid item sm={6}>
+        <Grid item xs={12} sm={6}>
           <Typography variant={props.v.sub_sec}>Valles Marineris</Typography>
           <Typography variant={props.v.body} paragraph>
             To the east of Tharsis is Valles Marineris, or the Mariner Valley.
@@ -99,7 +99,7 @@ function Mars(props) {
             Marineris.
           </Typography>
         </Grid>
-        <Grid item sm={6}>
+        <Grid item xs={12} sm={6}>
           <Typography variant={props.v.sub_sec}>Hellas Basin</Typography>
           <Typography variant={props.v.body} paragraph>
             In the southern highlands lies the Hellas Basin. This region is the
@@ -112,7 +112,7 @@ function Mars(props) {
             ago, because of its heavily cratered floor.
           </Typography>
         </Grid>
-        <Grid item sm={6}>
+        <Grid item xs={12} sm={6}>
           <Typography variant={props.v.sub_sec}>Borealis Basin</Typography>
           <Typography variant={props.v.body} paragraph>
             In the north region of Mars is the Borealis Basin. Similar to the

@@ -18,7 +18,7 @@ function HomePage(props) {
   return (
     <div>
       <Grid container spacing={2} justify="center" alignItems="center">
-        <Grid item xs={12}>
+        <Grid item xs={11}>
           <img
             src={MilkyWayImg}
             className={classes.img}
@@ -48,7 +48,7 @@ function HomePage(props) {
             matter and dust.
           </Typography>          
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={11} lg={6}>
           <Typography variant={props.v.section}>
               How did our solar system form?
           </Typography>
@@ -69,7 +69,7 @@ function HomePage(props) {
             the orbit pattern we see today.
           </Typography>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={11} lg={5}>
           <img src={SolarSysFormImg} alt="Solar System Formation" className={classes.img} />
           <ImgCaption
             text="Illustration of the formation of the Solar System"

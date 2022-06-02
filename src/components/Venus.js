@@ -19,7 +19,7 @@ function Venus(props) {
   return (
     <div>
       <Grid container className="page-container" spacing={3} justify="space-evenly" alignItems="center">
-        <Grid item sm={12} md={4}>
+        <Grid item xs={11} sm={4}>
           <img src={VenusImg} className={classes.img} alt="Venus" />
           <ImgCaption
             text="Venus"
@@ -27,7 +27,7 @@ function Venus(props) {
             source="NASA"
           />
         </Grid>
-        <Grid item sm={12} md={7}>
+        <Grid item xs={11} sm={7}>
           <Typography variant={props.v.title}>Venus</Typography>
           <Typography variant={props.v.body}>
             Venus is the second planet from the Sun and the hottest in solar system.
@@ -42,7 +42,7 @@ function Venus(props) {
             volcanic activity.
           </Typography>
         </Grid>
-        <Grid item xs={7}>
+        <Grid item xs={11} sm={7}>
           <Typography variant={props.v.section}>Venus's Volcanoes</Typography>
           <Typography variant={props.v.body} paragraph>
             Venus is believed to be a hub of volcanic activity, and several
@@ -64,7 +64,7 @@ function Venus(props) {
             seen on Earth; however, coronae are a more mild version.
           </Typography>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={11} sm={4}>
           <img
             src={VenusVolcanoImg}
             alt="Maat Mons volcanoe on Venus (Computer generated 3D)"
@@ -86,7 +86,7 @@ function Venus(props) {
             source="lpi.usra.edu"
           />
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={11} sm={5}>
           <img
             src={VeneraImg}
             alt="Venera 13 on Venus"
@@ -98,7 +98,7 @@ function Venus(props) {
             source="astronomy.com"
           />
         </Grid>
-        <Grid item xs={7}>
+        <Grid item xs={11} sm={7}>
           <Typography variant={props.v.sub_sec}>
             Volcanism in Venus Today
           </Typography>

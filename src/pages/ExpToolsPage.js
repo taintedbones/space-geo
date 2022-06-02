@@ -36,7 +36,7 @@ function ExpToolsPage(props) {
             technologies used to study our solar system.
           </Typography>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={11} sm={4}>
           <img src={HubbleImg} alt="Hubble Telescope" className={classes.img} />
           <ImgCaption
             text="Hubble Telescope in Space"
@@ -44,7 +44,7 @@ function ExpToolsPage(props) {
             source="NASA"
           />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={11} sm={6}>
           <Typography variant={props.v.section}>
             Telescopes
           </Typography>
@@ -59,7 +59,7 @@ function ExpToolsPage(props) {
             10-15 billion lightyears away.
           </Typography>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={11} sm={6}>
           <Typography variant={props.v.section}>
             Rovers & Landers
           </Typography>
@@ -77,7 +77,7 @@ function ExpToolsPage(props) {
             images, infrared readings, and data samples.
           </Typography>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={11} sm={4}>
           <img src={InSightImg} alt="InSight Lander" className={classes.img} />
           <ImgCaption
             text="InSight Lander on Mars"
@@ -95,7 +95,7 @@ function ExpToolsPage(props) {
             source="NASA"
           />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={11} sm={4}>
           <img
             src={MessengerImg}
             alt="Messenger Probe"
@@ -117,7 +117,7 @@ function ExpToolsPage(props) {
             source="NASA"
           />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={11} sm={6}>
           <Typography variant={props.v.section}>
             Space Probes
           </Typography>
@@ -138,7 +138,7 @@ function ExpToolsPage(props) {
             and understanding the geology of other planets.
           </Typography>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={11} sm={6}>
           <Typography variant={props.v.section}>
             Radar
           </Typography>
@@ -157,7 +157,7 @@ function ExpToolsPage(props) {
             bright spots because more energy was reflected back.
           </Typography>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={11} sm={4}>
           <img
             src={VeritasRadarImg}
             alt="Veritas Radar Art Concept"
@@ -179,7 +179,7 @@ function ExpToolsPage(props) {
             source="NASA"
           />
         </Grid>
-        <Grid item xs={10}>
+        <Grid item xs={11} sm={10}>
           <Typography variant={props.v.section}>
             Models & Simulations
           </Typography>
@@ -199,7 +199,7 @@ function ExpToolsPage(props) {
             models and simulations enable us to make sense of that data.
           </Typography>
         </Grid>
-        <Grid item xs={9}>
+        <Grid item xs={11} sm={9}>
           <img
             src={SMBlackHoleSimImg}
             alt="Super Massive Black Hole Simulation"

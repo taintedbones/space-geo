@@ -18,7 +18,7 @@ function Uranus(props) {
   return (
     <div>
       <Grid container spacing={3} alignItems="center" justify='space-evenly'>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={4}>
           <img src={UranusImg} alt="Uranus" className={classes.img} />
           <ImgCaption
             text="Uranus"
@@ -26,7 +26,7 @@ function Uranus(props) {
             source="Smithsonian"
           />
         </Grid>
-        <Grid item xs={7}>
+        <Grid item xs={12} sm={7}>
           <Typography variant={props.v.title}>Uranus</Typography>
           <Typography variant={props.v.body}>
             Uranus is the seventh planet from the Sun and is known as an “ice
@@ -39,7 +39,7 @@ function Uranus(props) {
             planet to display this behavior is Venus.
           </Typography>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6}>
           <Typography variant={props.v.section}>Uranus's Atmosphere</Typography>
           <Typography variant={props.v.body}>
             Uranus doesn’t have a true surface but instead is made up of at
@@ -54,7 +54,7 @@ function Uranus(props) {
             the blue-green color that we see.
           </Typography>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6}>
           <img src={UranusAtmosImg} alt="Detailed Uranus's Atmosphere" className={classes.img} />
           <ImgCaption
             text="Detailed photo or Uranus's Atmosphere"
@@ -62,7 +62,7 @@ function Uranus(props) {
             source="NASA"
           />
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={12} sm={5}>
           <img src={UranusRingsImg} alt="Uranus's Rings" className={classes.img} />
           <ImgCaption
             text="Uranus's Ring System - Solid lines(rings) & dashed lines(moon orbits)"
@@ -70,7 +70,7 @@ function Uranus(props) {
             source="Wikipedia"
           />
         </Grid>
-        <Grid item container xs={7}>
+        <Grid item container xs={12} sm={7}>
           <Grid item xs={12}>
             <Typography variant={props.v.section}>Uranus's Rings</Typography>
             <Typography variant={props.v.body}>

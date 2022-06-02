@@ -1,5 +1,5 @@
 import { makeStyles } from "@material-ui/core";
-import { HashRouter, BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ExpToolsPage from "./pages/ExpToolsPage";
 import GeoFeaturesPage from "./pages/GeoFeaturesPage";
@@ -11,7 +11,6 @@ import Background from "./assets/Space-Background.jpg";
 import AppFooter from "./components/Footer.js";
 import '@fontsource/roboto';
 
-const b_margins = "150px";
 
 const useStyles = makeStyles((theme) => ({
   app: {
@@ -27,11 +26,11 @@ const useStyles = makeStyles((theme) => ({
   body: {
     background: "white",
     position: "relative",
-    marginLeft: b_margins,
-    marginRight: b_margins,
+    marginLeft: "auto",
+    marginRight: "auto",
     height: "100%",
-    width: "1000px",
-    minWidth: "1000px",
+    width: "100%",
+    maxWidth:"1000px",
   },
 }));
 
@@ -48,7 +47,6 @@ function App() {
   return (
     <div className={classes.app}>
       <div className={classes.body}>
-        {/* <Router> */}
         <HashRouter basename="/">
           <Route path="/" component={TopNav} />
           <Switch>
@@ -71,8 +69,7 @@ function App() {
               <HomePage v={format} />
             </Route>            
           </Switch>
-          <Route path="/" component={AppFooter} />          
-        {/* </Router> */}
+          <Route path="/" component={AppFooter} />
         </HashRouter>
       </div>
     </div>

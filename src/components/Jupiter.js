@@ -21,7 +21,7 @@ function Jupiter(props) {
   return (
     <div>
       <Grid container spacing={3} alignItems="center" justify="space-evenly">
-        <Grid item sm={12} md={5}>
+        <Grid item xs={12} sm={5}>
           <img src={JupiterImg} className={classes.img} alt="Jupiter" />
           <ImgCaption
             text="Jupiter"
@@ -29,7 +29,7 @@ function Jupiter(props) {
             source="NASA"
           />
         </Grid>
-        <Grid item sm={12} md={7}>
+        <Grid item xs={12} sm={7}>
           <Typography variant={props.v.title}>Jupiter</Typography>
           <Typography variant={props.v.body} paragraph>
             Jupiter is the fifth planet from the Sun and the largest in our
@@ -48,7 +48,7 @@ function Jupiter(props) {
             it.
           </Typography>
         </Grid>
-        <Grid item xs={7}>
+        <Grid item xs={12} sm={7}>
           <Typography variant={props.v.section}>Jupiter's Clouds</Typography>
           <Typography variant={props.v.body}>
             Jupiter’s clouds are a banded structure in the planet’s atmosphere
@@ -69,7 +69,7 @@ function Jupiter(props) {
             spread around the entire planet.
           </Typography>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={12} sm={5}>
           <img src={JupiterCloudsImg} alt="Clouds of Jupiter" className={classes.img} />
           <ImgCaption
             text="Clouds of Jupiter"
@@ -77,7 +77,7 @@ function Jupiter(props) {
             source="NASA"
           />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={4}>
           <img src={GreatRedSpotImg} alt="Jupiter's Great Red Spot" className={classes.img} />
           <ImgCaption
             text="Jupiter's Great Red Spot"
@@ -85,7 +85,7 @@ function Jupiter(props) {
             source="NASA"
           />
         </Grid>
-        <Grid item xs={7}>
+        <Grid item xs={12} sm={7}>
           <Typography variant={props.v.section}>Great Red Spot</Typography>
           <Typography variant={props.v.body} paragraph>
             Based on observations made by Voyager and Galileo, we know that

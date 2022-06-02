@@ -21,7 +21,7 @@ function Mercury(props) {
   return (
     <div>
       <Grid container spacing={2} alignItems="center" justify="space-evenly">
-        <Grid item sm={12} md={4}>
+        <Grid item xs={11} sm={4}>
           <img src={MercuryImg} className={classes.img} alt="Mercury" />
           <ImgCaption
             text="Mercury"
@@ -29,7 +29,7 @@ function Mercury(props) {
             source="NASA"
           />
         </Grid>
-        <Grid item sm={12} md={7}>
+        <Grid item xs={12} sm={7}>
           <Typography variant={props.v.title}>Mercury</Typography>
           <Typography variant={props.v.body}>
             Mercury is the smallest planet in the solar system, a little larger
@@ -45,7 +45,7 @@ function Mercury(props) {
             degrees Fahrenheit.
           </Typography>
         </Grid>
-        <Grid item xs={7}>
+        <Grid item xs={11} sm={7}>
           <Typography variant={props.v.section}>
             Mercury's Rocky Surface
           </Typography>
@@ -62,7 +62,7 @@ function Mercury(props) {
             Mercury’s crust was formed.
           </Typography>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={11} sm={4}>
           <img src={MercurySurfaceImg} alt="Mercury's cratered surface"  className={classes.img} />
           <ImgCaption
             text="Mercury's cratered surface"
@@ -70,7 +70,7 @@ function Mercury(props) {
             source="NASA"
           />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={11} sm={4}>
           <img src={MercuryScarpImg} alt='Scarp on Mercury' className={classes.img} />
           <ImgCaption
             text="Scarp on Mercury"
@@ -78,7 +78,7 @@ function Mercury(props) {
             source="NASA - JPL"
           />
         </Grid>
-        <Grid item xs={7}>
+        <Grid item xs={11} sm={7}>
           <Typography variant={props.v.sub_sec}>Mercury's Scarp</Typography>
           <Typography variant={props.v.body}>
             Mercury’s scarp is a cliff on the planet’s surface that stretches
