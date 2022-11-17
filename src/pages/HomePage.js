@@ -48,7 +48,7 @@ function HomePage(props) {
             matter and dust.
           </Typography>          
         </Grid>
-        <Grid item xs={11} lg={6}>
+        <Grid item xs={11} md={6}>
           <Typography variant={props.v.section}>
               How did our solar system form?
           </Typography>
@@ -69,7 +69,7 @@ function HomePage(props) {
             the orbit pattern we see today.
           </Typography>
         </Grid>
-        <Grid item xs={11} lg={5}>
+        <Grid item xs={11} md={5}>
           <img src={SolarSysFormImg} alt="Solar System Formation" className={classes.img} />
           <ImgCaption
             text="Illustration of the formation of the Solar System"
